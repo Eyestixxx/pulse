@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — PULSE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo" href="index.html">PULSE</a>
+        <button class="header__burger" type="button" aria-label="Открыть меню">☰</button>
+        <nav class="header__nav nav">
+            <a class="nav__link" href="index.html">Главная</a>
+            <a class="nav__link" href="products.html">Каталог</a>
+            <a class="nav__link" href="registration.html">Регистрация</a>
+            <a class="nav__link" href="account.html">Кабинет</a>
+        </nav>
+        <div class="header__cart">Корзина</div>
+    </header>
+
+    <main class="page">
+        <section class="section">
+            <div class="section__top">
+                <h1 class="page__title">Каталог товаров</h1>
+                <input class="catalog__search" id="searchInput" type="search" placeholder="Поиск товара">
+            </div>
+            <div class="catalog__grid" id="allProducts"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo">PULSE</div>
+        <nav class="footer__nav">
+            <a class="footer__link" href="index.html">Главная</a>
+            <a class="footer__link" href="products.html">Каталог</a>
+            <a class="footer__link" href="registration.html">Регистрация</a>
+            <a class="footer__link" href="account.html">Кабинет</a>
+        </nav>
+        <p class="footer__copy">© 2026 PULSE. Все права защищены.</p>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULSE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo" href="index.html">PULSE</a>
+
+        <button class="header__burger" type="button" aria-label="Открыть меню">☰</button>
+
+        <nav class="header__nav nav">
+            <a class="nav__link" href="index.html">Главная</a>
+            <a class="nav__link" href="products.html">Каталог</a>
+            <a class="nav__link" href="registration.html">Регистрация</a>
+            <a class="nav__link" href="account.html">Кабинет</a>
+        </nav>
+
+        <div class="header__cart">Корзина</div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Мерч, который бьётся<br><span>в твоём ритме</span></h1>
+
+                <div class="hero__words">
+                    <span>Стиль</span>
+                    <span>Энергия</span>
+                    <span>Ты</span>
+                </div>
+
+                <a class="hero__button" href="products.html">Смотреть каталог</a>
+            </div>
+
+            <div class="hero__photos" aria-label="Фотографии коллекции">
+                <img class="hero__photo hero__photo--one" src="img/hero-model-1.png" alt="Модель в худи PULSE">
+                <img class="hero__photo hero__photo--two" src="img/hero-model-2.png" alt="Модель в футболке PULSE">
+                <img class="hero__photo hero__photo--three" src="img/hero-model-3.png" alt="Модель в кепке PULSE">
+            </div>
+        </section>
+
+        <section class="benefits">
+            <article class="benefits__item">
+                <img class="benefits__icon" src="img/icon-delivery.svg" alt="">
+                <div>
+                    <h3 class="benefits__title">Быстрая доставка</h3>
+                    <p class="benefits__text">Отправляем заказы по всей России</p>
+                </div>
+            </article>
+            <article class="benefits__item">
+                <img class="benefits__icon" src="img/icon-quality.svg" alt="">
+                <div>
+                    <h3 class="benefits__title">Качество</h3>
+                    <p class="benefits__text">Плотные материалы и стойкие принты</p>
+                </div>
+            </article>
+            <article class="benefits__item">
+                <img class="benefits__icon" src="img/icon-design.svg" alt="">
+                <div>
+                    <h3 class="benefits__title">Уникальный мерч</h3>
+                    <p class="benefits__text">Дизайны в тёмном streetwear-стиле</p>
+                </div>
+            </article>
+            <article class="benefits__item">
+                <img class="benefits__icon" src="img/icon-payment.svg" alt="">
+                <div>
+                    <h3 class="benefits__title">Оплата</h3>
+                    <p class="benefits__text">Удобное оформление заказа</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="catalog section">
+            <div class="section__top">
+                <h2 class="section__title">Каталог товаров</h2>
+                <a class="section__link" href="products.html">Весь каталог</a>
+            </div>
+
+            <div class="catalog__grid" id="homeProducts"></div>
+            <button class="catalog__more" id="showMoreBtn" type="button">Показать больше</button>
+        </section>
+
+        <section class="about section">
+            <h2 class="section__title">О нас</h2>
+            <p class="about__text">PULSE - онлайн-магазин мерча для тех, кто выбирает тёмную эстетику, выразительные принты и streetwear с характером. Мы собираем одежду и аксессуары которые помогают выделиться без лишних слов.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo">PULSE</div>
+        <nav class="footer__nav">
+            <a class="footer__link" href="index.html">Главная</a>
+            <a class="footer__link" href="products.html">Каталог</a>
+            <a class="footer__link" href="registration.html">Регистрация</a>
+            <a class="footer__link" href="account.html">Кабинет</a>
+        </nav>
+        <p class="footer__copy">© 2026 PULSE. Все права защищены.</p>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

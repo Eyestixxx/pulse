@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация — PULSE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo" href="index.html">PULSE</a>
+        <button class="header__burger" type="button" aria-label="Открыть меню">☰</button>
+        <nav class="header__nav nav">
+            <a class="nav__link" href="index.html">Главная</a>
+            <a class="nav__link" href="products.html">Каталог</a>
+            <a class="nav__link" href="registration.html">Регистрация</a>
+            <a class="nav__link" href="account.html">Кабинет</a>
+        </nav>
+    </header>
+
+    <main class="page">
+        <section class="form-card">
+            <h1 class="form-card__title">Регистрация</h1>
+            <form class="form" id="registrationForm">
+                <label class="form__label">Имя
+                    <input class="form__input" type="text" name="name" placeholder="Введите имя">
+                </label>
+                <label class="form__label">Email
+                    <input class="form__input" type="email" name="email" placeholder="example@mail.ru">
+                </label>
+                <label class="form__label">Пароль
+                    <input class="form__input" type="password" name="password" placeholder="Не меньше 6 символов">
+                </label>
+                <label class="form__label">Повтор пароля
+                    <input class="form__input" type="password" name="passwordRepeat" placeholder="Повторите пароль">
+                </label>
+                <label class="form__check">
+                    <input type="checkbox" name="agree">
+                    <span>Согласна с обработкой данных</span>
+                </label>
+                <p class="form__message" id="formMessage"></p>
+                <button class="form__button" type="submit">Зарегистрироваться</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo">PULSE</div>
+        <nav class="footer__nav">
+            <a class="footer__link" href="index.html">Главная</a>
+            <a class="footer__link" href="products.html">Каталог</a>
+            <a class="footer__link" href="registration.html">Регистрация</a>
+            <a class="footer__link" href="account.html">Кабинет</a>
+        </nav>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
