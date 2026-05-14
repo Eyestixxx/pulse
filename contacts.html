@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 — PULSE</title>
+    <title>Контакты — PULSE</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,10 +22,38 @@
         <a class="header__cart" href="cart.html">Корзина <span class="header__cart-count" id="cartCount">0</span></a>
     </header>
 
-    <main class="error-page">
-        <h1 class="error-page__title">404</h1>
-        <p class="error-page__text">Страница не найдена</p>
-        <a class="error-page__button" href="index.html">Вернуться на главную</a>
+    <main class="page">
+        <section class="contacts section">
+            <h1 class="page__title">Контактная информация</h1>
+            <div class="contacts__grid">
+                <article class="contacts__card">
+                    <h2 class="contacts__title">Связь</h2>
+                    <p class="contacts__text"><span>Email:</span> pulse.store@example.com</p>
+                    <p class="contacts__text"><span>Телефон:</span> +7 900 555-24-24</p>
+                    <p class="contacts__text"><span>Telegram:</span> @pulse_store</p>
+                </article>
+                <article class="contacts__card">
+                    <h2 class="contacts__title">Магазин</h2>
+                    <p class="contacts__text"><span>Адрес:</span> Москва, ул. Стритвирная, 12</p>
+                    <p class="contacts__text"><span>График:</span> ежедневно с 10:00 до 21:00</p>
+                    <p class="contacts__text"><span>Доставка:</span> по России</p>
+                </article>
+            </div>
+            <form class="form contacts__form" id="contactForm">
+                <h2 class="contacts__title">Обратная связь</h2>
+                <label class="form__label">Имя
+                    <input class="form__input" type="text" name="name" placeholder="Введите имя">
+                </label>
+                <label class="form__label">Email
+                    <input class="form__input" type="email" name="email" placeholder="example@mail.ru">
+                </label>
+                <label class="form__label">Сообщение
+                    <textarea class="form__input form__input--textarea" name="message" placeholder="Ваше сообщение"></textarea>
+                </label>
+                <p class="form__message" id="contactMessage"></p>
+                <button class="form__button" type="submit">Отправить</button>
+            </form>
+        </section>
     </main>
 
     <footer class="footer">

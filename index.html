@@ -15,11 +15,13 @@
         <nav class="header__nav nav">
             <a class="nav__link" href="index.html">Главная</a>
             <a class="nav__link" href="products.html">Каталог</a>
+            <a class="nav__link" href="login.html">Вход</a>
             <a class="nav__link" href="registration.html">Регистрация</a>
             <a class="nav__link" href="account.html">Кабинет</a>
+            <a class="nav__link" href="contacts.html">Контакты</a>
         </nav>
 
-        <div class="header__cart">Корзина</div>
+        <a class="header__cart" href="cart.html">Корзина <span class="header__cart-count" id="cartCount">0</span></a>
     </header>
 
     <main>
@@ -86,7 +88,19 @@
 
         <section class="about section">
             <h2 class="section__title">О нас</h2>
-            <p class="about__text">PULSE - онлайн-магазин мерча для тех, кто выбирает тёмную эстетику, выразительные принты и streetwear с характером. Мы собираем одежду и аксессуары которые помогают выделиться без лишних слов.</p>
+            <p class="about__text">PULSE - онлайн-магазин мерча для тех, кто выбирает тёмную эстетику, выразительные принты и streetwear с характером. Мы собираем одежду и аксессуары, которые помогают выделиться без лишних слов.</p>
+        </section>
+
+        <section class="contacts-preview section">
+            <div class="section__top">
+                <h2 class="section__title">Контакты</h2>
+                <a class="section__link" href="contacts.html">Подробнее</a>
+            </div>
+            <div class="contacts-preview__grid">
+                <p class="contacts-preview__item"><span>Email:</span> pulse.store@example.com</p>
+                <p class="contacts-preview__item"><span>Телефон:</span> +7 900 555-24-24</p>
+                <p class="contacts-preview__item"><span>График:</span> ежедневно с 10:00 до 21:00</p>
+            </div>
         </section>
     </main>
 
@@ -95,9 +109,16 @@
         <nav class="footer__nav">
             <a class="footer__link" href="index.html">Главная</a>
             <a class="footer__link" href="products.html">Каталог</a>
+            <a class="footer__link" href="login.html">Вход</a>
             <a class="footer__link" href="registration.html">Регистрация</a>
             <a class="footer__link" href="account.html">Кабинет</a>
+            <a class="footer__link" href="contacts.html">Контакты</a>
         </nav>
+        <div class="footer__contacts">
+            <p class="footer__contact">Email: pulse.store@example.com</p>
+            <p class="footer__contact">Телефон: +7 900 555-24-24</p>
+            <p class="footer__contact">Адрес: Москва, ул. Стритвирная, 12</p>
+        </div>
         <p class="footer__copy">© 2026 PULSE. Все права защищены.</p>
     </footer>
 

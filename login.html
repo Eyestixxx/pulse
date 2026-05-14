@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кабинет — PULSE</title>
+    <title>Вход — PULSE</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,37 +19,23 @@
             <a class="nav__link" href="contacts.html">Контакты</a>
         </nav>
 
-        <a class="header__cart" href="cart.html">Корзина <span class="header__cart-count" id="cartCount">0</span></a></header>
+        <a class="header__cart" href="cart.html">Корзина <span class="header__cart-count" id="cartCount">0</span></a>
+    </header>
 
     <main class="page">
-        <section class="account">
-            <div class="account__avatar">A</div>
-            <div class="account__info">
-                <h1 class="page__title">Личный кабинет</h1>
-
-
-                <div class="account__data">
-                    <p><span>Имя:</span> <strong id="accountName">Алина Морозова</strong></p>
-                    <p><span>Email:</span> <strong id="accountEmail">alina.morozova@example.com</strong></p>
-                    <p><span>Телефон:</span> +7 900 123-45-67</p>
-                    <p><span>Город:</span> Москва</p>
-                    <p><span>Статус:</span> Постоянный покупатель</p>
-                </div>
-
-                <div class="account__orders">
-                    <h2 class="account__heading">История заказов</h2>
-                    <article class="account__order">
-                        <h3 class="account__order-title">Заказ №1042</h3>
-                        <p class="account__order-text">PULSE Hoodie, PULSE Cap — оформлен 12.05.2026</p>
-                    </article>
-                    <article class="account__order">
-                        <h3 class="account__order-title">Заказ №1038</h3>
-                        <p class="account__order-text">CHAOS T-shirt — доставлен 04.05.2026</p>
-                    </article>
-                </div>
-
-                <button class="account__button" type="button">Выйти</button>
-            </div>
+        <section class="form-card">
+            <h1 class="form-card__title">Вход</h1>
+            <form class="form" id="loginForm">
+                <label class="form__label">Email
+                    <input class="form__input" type="email" name="email" placeholder="example@mail.ru">
+                </label>
+                <label class="form__label">Пароль
+                    <input class="form__input" type="password" name="password" placeholder="Введите пароль">
+                </label>
+                <p class="form__message" id="loginMessage"></p>
+                <button class="form__button" type="submit">Войти</button>
+                <p class="form__hint">Нет аккаунта? <a class="form__link" href="registration.html">Зарегистрироваться</a></p>
+            </form>
         </section>
     </main>
 
